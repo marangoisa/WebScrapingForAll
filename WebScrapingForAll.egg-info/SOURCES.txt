@@ -1,7 +1,0 @@
-README.md
-setup.py
-WebScrapingForAll/__init__.py
-WebScrapingForAll.egg-info/PKG-INFO
-WebScrapingForAll.egg-info/SOURCES.txt
-WebScrapingForAll.egg-info/dependency_links.txt
-WebScrapingForAll.egg-info/top_level.txt
