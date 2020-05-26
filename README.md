@@ -5,12 +5,11 @@ This tool is perfect for collecting information in websites where data is presen
 Every website is different, therefore not every toll can be used on every website This toolbox is especially good for scraping websites in html.
 
 ## Installation
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install WebScrapingForAll.
-
-```bash
-pip install WebScrapingForAll
+Download complete file to your computer and from the command prompt run
+```python
+pip install C:/Users/maran/Documents/MyPythoLib/WebScrapingForAll
 ```
+
 ## Usage
 Import all (*) functions or one by one
 ```python
