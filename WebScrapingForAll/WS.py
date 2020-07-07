@@ -2,6 +2,7 @@ import requests
 import sys
 
 def obj(source_cod, pos_ini, start, end):
+    pos_ini = source_cod.find(str(pos_ini),0)
     pos_ini = source_cod.find(str(start),pos_ini)
     pos_fini = source_cod.find(str(end), pos_ini)
     output=source_cod[pos_ini+len(start):pos_fini]
