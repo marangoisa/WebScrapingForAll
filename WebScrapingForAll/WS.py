@@ -2,7 +2,8 @@ import requests
 import sys
 
 def obj(source_cod, pos_ini, start, end):
-    pos_ini = source_cod.find(str(pos_ini),0)
+    if pos_ini<0:
+        pos_ini = 0
     pos_ini = source_cod.find(str(start),pos_ini)
     pos_fini = source_cod.find(str(end), pos_ini)
     output=source_cod[pos_ini+len(start):pos_fini]
@@ -26,7 +27,7 @@ def FindKey(address,training):
         lnky=1
         posi=source.find(str(i))
         while nkey>1:
-            key=source[posi-lnky:posi-len(i)]
+            key=source[posi-lnky:posi]
             nkey=source.count(str(key))
             lnky=lnky+1
         key=key[0:len(key)-len(i)]
