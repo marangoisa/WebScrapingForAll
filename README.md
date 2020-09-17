@@ -21,7 +21,7 @@ import WebScrapingForAll.WS
 from WebScrapingForAll.WS import *
 ```
 ### FindKey 
-Use FindKey to find unique strings related to the data (keys)
+Use FindKey to find unique strings related to the data (keys).\
 Example: let’s say we want all the sates in http://www.sale-tax.com/. To find the key we have to provide a few keywords used as training (i.e. Ohio, NorthDakota) 
 ```python
 keys=FindKey(address='http://www.sale-tax.com/',training=['Ohio','NorthDakota'])
