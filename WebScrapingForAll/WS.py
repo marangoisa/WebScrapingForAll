@@ -25,7 +25,7 @@ def FindKey(address,training):
         lnky=1
         posi=source.find(str(i))
         while nkey>1:
-            key=source[posi-lnky:posi+len(i)]
+            key=source[posi-lnky:posi-len(i)]
             nkey=source.count(str(key))
             lnky=lnky+1
         key=key[0:len(key)-len(i)]
@@ -36,7 +36,7 @@ def FindKey(address,training):
         lnky=1
         posi=source.find(str(i))
         while nkey>1:
-            key=source[posi:posi+len(i)+lnky]
+            key=source[posi+len(i):posi+len(i)+lnky]
             nkey=source.count(str(key))
             lnky=lnky+1
         key=key[len(i):len(key)]
