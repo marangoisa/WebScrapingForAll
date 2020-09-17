@@ -27,7 +27,7 @@ Example: let’s say we want all the sates in http://www.sale-tax.com/. To find 
 keys=FindKey(address='http://www.sale-tax.com/',training=['Ohio','NorthDakota'])
 ```
  ### TestKey
- Test how many times the key appears
+ Test how many times the key appears.\
  Example: we need a key that appears 50 times (number of states)
  ```python
  TestKey(keys[0])
