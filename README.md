@@ -26,10 +26,24 @@ Example: let’s say we want all the sates in http://www.sale-tax.com/. To find 
 ```python
 keys=FindKey(address='http://www.sale-tax.com/',training=['Ohio','NorthDakota'])
 ```
+ ### TestKey
+ Test how many times the key appears
+ Example: we need a key that appears 50 times (number of states)
+ ```python
+ TestKey(keys[0])
+ ```
+ Using only the last part, one gets a key that appears 50 times
+ ```python
+ key0=keys[0][48:len(keys[0])]
+ TestKey(keys0)
+ key1=keys[1][0:len(keys[1])-5]
+ TestKey(key1)
+ ```
+
 ### ManyInOne
 Use the Key to find all the needed elements
 ```python
-States=ManyInOne(address='http://www.sale-tax.com/',keyst=keys[0],keynd=keys[1])
+States=ManyInOne(address='http://www.sale-tax.com/',keyst=key0,keynd=key1)
 ```
 ### OneInMany
 Use ManyInOne if you have more than one address
@@ -43,4 +57,4 @@ for i in cities:
     rt=OneInMany(address=i,keyst="'rate'>",keynd='<')
     Rates.append(rt)
 ```
- 
+
