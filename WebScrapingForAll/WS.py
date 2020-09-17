@@ -85,3 +85,8 @@ def OneInMany(address,keyst,keynd):
             pos0=result[1]+1
             j=j+1
         return results
+    
+def TestKey(key):
+    TimesK=source.count(str(key))
+    print('Key appears '+str(TimesK)+' times')
+    return [TimesK]
