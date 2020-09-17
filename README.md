@@ -5,11 +5,11 @@ This tool is perfect for collecting information in websites where data is presen
 Every website is different, therefore not every toll can be used on every website This toolbox is especially good for scraping websites in html.
 
 ## Installation
-Use git (https://git-scm.com/downloads)
+Use git (https://git-scm.com/downloads).
 ```python
 pip install git+https://github.com/marangoisa/WebScrapingForAll
 ```
-or download the complete file to your computer and use the command prompt to run from the setup folder
+Or download the complete file to your computer and use the command prompt to run from the setup folder
 ```python
 pip install C:/xxx/xxx/WebScrapingForAll
 ```
