@@ -29,7 +29,7 @@ keys=FindKey(address='http://www.sale-tax.com/',training=['Ohio','NorthDakota'])
 ### ManyInOne
 Use the Key to find all the needed elements
 ```python
-States=ManyInOne(address=adrs,keyst=keys[0],keynd=keys[1])
+States=ManyInOne(address='http://www.sale-tax.com/',keyst=keys[0],keynd=keys[1])
 ```
 ### OneInMany
 Use ManyInOne if you have more than one address
