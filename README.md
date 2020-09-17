@@ -9,6 +9,10 @@ Use git (https://git-scm.com/downloads).
 ```python
 pip install git+https://github.com/marangoisa/WebScrapingForAll
 ```
+To update
+```python
+pip install --upgrade git+https://github.com/marangoisa/WebScrapingForAll
+```
 Or download the complete file to your computer and use the command prompt to run from the setup folder
 ```python
 pip install C:/xxx/xxx/WebScrapingForAll
