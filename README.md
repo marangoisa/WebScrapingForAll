@@ -30,14 +30,14 @@ keys=FindKey(address='http://www.sale-tax.com/',training=['Ohio','NorthDakota'])
  Test how many times the key appears.\
  Example: we need a key that appears 50 times (number of states)
  ```python
- TestKey(keys[0])
+ TestKey(address='http://www.sale-tax.com/',key=keys[0])
  ```
  Using only the last part, one gets a key that appears 50 times
  ```python
  key0=keys[0][48:len(keys[0])]
- TestKey(keys0)
+ TestKey(address='http://www.sale-tax.com/',key=key0)
  key1=keys[1][0:len(keys[1])-5]
- TestKey(key1)
+ TestKey(address='http://www.sale-tax.com/',key=key1)
  ```
 
 ### ManyInOne
