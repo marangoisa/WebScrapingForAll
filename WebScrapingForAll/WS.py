@@ -17,8 +17,9 @@ def FindKey(address,training):
         nkw=source.count(str(i))
         numkw.append(nkw)
     if max(numkw)>1:    
-        print('One or more kewyords have more than one appearance, wil go with\
-              first. Check source code (crtl+u) for a more specific key')
+        print('One or more kewyords have more than one appearance, it should apear once\
+              will use first option, this migth be wrong! Go to the website and check the source code (crtl+u)\
+              look for a more specific key')
     keysst=[]
     for i in training:
         nkey=2
