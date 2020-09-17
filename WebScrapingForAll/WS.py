@@ -30,7 +30,7 @@ def FindKey(address,training):
             key=source[posi-lnky:posi]
             nkey=source.count(str(key))
             lnky=lnky+1
-        key=key[0:len(key)-len(i)]
+       #key=key[0:len(key)-len(i)]
         keysst.append(key)
     keysnd=[]
     for i in training:
@@ -41,7 +41,7 @@ def FindKey(address,training):
             key=source[posi+len(i):posi+len(i)+lnky]
             nkey=source.count(str(key))
             lnky=lnky+1
-        key=key[len(i):len(key)]
+        #key=key[len(i):len(key)]
         keysnd.append(key)
     keyst=list(set(keysst))    
     keynd=list(set(keysnd))
