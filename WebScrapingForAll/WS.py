@@ -45,7 +45,8 @@ def FindKey(address,training):
     keyst=list(set(keysst))    
     keynd=list(set(keysnd))
     if len(keyst)>1 or len(keynd)>1:
-        sys.exit('No one key found, to many diffrent patherns in sourcecode')
+        sys.exit('No one key found, to many diffrent patherns in sourcecode\
+        try different training key words')
     keyst=str(keyst[0])   
     keynd=str(keynd[0])
     print('Key start:'+str(keyst)+' and key end:'+str(keynd))
